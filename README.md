@@ -53,3 +53,9 @@ Change a presentation title:
 ```
 $ curl -u "reid_dillard:password" -X PUT https://practice-django-joelazar.herokuapp.com/api/presentation/1/ -H "Content-Type: application/json" -d "{\"created_at\":\"2015-12-30T21:37:07\",\"creator\":\"Reid Dillard\",\"id\": 1, \"picture\":\"http://placehold.it/128x128\",\"resource_uri\":\"/api/presentation/1/\",\"title\":\"new title\"}"
 ```
+
+Heroku config:
+```
+DEBUG:                 False
+DISABLE_COLLECTSTATIC: 1
+```
