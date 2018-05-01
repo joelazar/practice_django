@@ -1,0 +1,21 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+
+[packages]
+
+dj-database-url = "*"
+django = "*"
+django-bootstrap3 = "*"
+django-filter = "*"
+django-tables2 = "*"
+django-tastypie = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
+python-dateutil = "*"
+
+[requires]
+
+python_version = "3.6"

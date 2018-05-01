@@ -1,0 +1,23 @@
+{% load static %}
+{% load render_table from django_tables2 %}
+{% load bootstrap3 %}
+<!doctype html>
+<html>
+<head>
+    <title>
+    {% block title %}
+    {% endblock %}
+    </title>
+    {% bootstrap_css %}
+</head>
+<body>
+  <hr>
+  <main>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </main>
+  <hr>
+</body>
+</html>

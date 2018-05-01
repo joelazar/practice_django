@@ -1,0 +1,7 @@
+{
+  "name": "Django practice",
+  "description": "A table with some filtering and auth feature.",
+  "image": "heroku/python",
+  "repository": "https://github.com/joelazar/practice_django",
+  "keywords": ["python", "django"],
+}

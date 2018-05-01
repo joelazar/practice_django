@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Presentation modification{% endblock %}
+
+{% block content %}
+    <h1 align="center">Modify Presentation</h1>
+    <div class="row">
+        <form method="POST" class="post-form">
+            {% csrf_token %}
+            <p>Creator: {{ presentation.creator }}</p>
+            <p>Created at: {{ presentation.created_at }}</p>
+            <p>Presentation id: {{ presentation.presentation_id }}</p>
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">Save</button>
+        </form>
+    </div>
+{% endblock %}
+
